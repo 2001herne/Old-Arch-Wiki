@@ -1,0 +1,16 @@
+{
+
+  "manifest_version": 2,
+  "name": "Old Arch Wiki",
+  "version": "1.0",
+
+  "description": "Automatically applies the useskinversion=1 parameter to all Arch Wiki URLs",
+
+  "content_scripts": [
+    {
+      "matches": ["*://wiki.archlinux.org/*"],
+      "js": ["oldArchWiki.js"]
+    }
+  ]
+
+}
