@@ -1,0 +1,13 @@
+input[type="number"] {
+    -moz-appearance: textfield;
+    width: 10ch;
+}
+
+input[type=button] {
+    width: 100%;
+}
+
+td {
+    text-align: center;
+    vertical-align: middle;
+}

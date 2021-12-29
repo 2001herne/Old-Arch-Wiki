@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="config.css"/>
+    </head>
+
+    <body>
+        <form>
+            <table>
+                <th></th>
+                <th></th>
+                <th>Enabled</th>
+                <tr>
+                    <td><label>Min Width(px):</label></td>
+                    <td><input type="number" id="minWidth" name="minWidth" placeholder="960"></td>
+                    <td><input type="checkbox" id="minWidthCheck" name="minWidthCheck"></td> 
+                </tr>
+                <tr>
+                    <td><label>Max Width(px):</label></td>
+                    <td><input type="number" id="maxWidth" name="maxWidth" placeholder="3840"></td>
+                    <td><input type="checkbox" id="maxWidthCheck" name="maxWidthCheck"></td> 
+                </tr>
+                <tr>
+                    <td colspan="3"><input type="button" value="Update Values" id="submitButton"></td>
+                </tr>
+            </table>
+        </form>
+    <script src="config.js"></script>
+    </body>
+</html>
