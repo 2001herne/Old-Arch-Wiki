@@ -2,7 +2,7 @@
 
   "manifest_version": 2,
   "name": "Old Arch Wiki",
-  "version": "1.0",
+  "version": "2.0.0",
 
   "description": "Automatically applies the useskinversion=1 parameter to all Arch Wiki URLs",
 
@@ -11,6 +11,20 @@
       "matches": ["*://wiki.archlinux.org/*"],
       "js": ["oldArchWiki.js"]
     }
-  ]
+  ],
 
+  "browser_action": {
+    "browser_style": true,
+    "default_popup": "popup/config.html"
+  },
+
+  "permissions": [
+    "storage"
+  ],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{f5ffc648-66fb-4aae-bd47-fe9b87b1f408}"
+    }
+  }
 }
